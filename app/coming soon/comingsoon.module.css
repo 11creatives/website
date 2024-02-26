@@ -1,0 +1,103 @@
+.main {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../../public/asset/Lines.svg);
+    background-repeat: no-repeat;
+    padding: 2rem;
+    /* background-size: 110% 100%; */
+    background-position: left -10% top -30%;
+}
+.content {
+    background-image: url(../../public/asset/DotGrid.svg);
+    background-repeat: no-repeat;
+    height: 100vh;
+    flex: 1;
+    max-width: 1400px;
+    display: flex;
+}
+.coming h1 {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.coming {
+    display: flex;
+    align-items: center;
+    padding-bottom: 15rem;
+}
+.spinnerwrapper {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.spinner {
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+
+.orbit {
+    position: absolute;
+    height: 120px;
+    width: 120px;
+    display: flex;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #20272f;
+}
+
+.centerdot {
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    background-color: #20272f;
+}
+
+.reddot {
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    border-radius: 100%;
+    background-color: #e65709;
+    animation: dot-rotation 7s linear infinite;
+}
+@keyframes dot-rotation {
+    0% {
+        transform: rotate(0deg) translate(75px);
+    }
+    100% {
+        transform: rotate(360deg) translate(75px);
+    }
+}
+@media only screen and (min-width: 1448px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .coming {
+        padding-top: 100px;
+    }
+    .spinnerwrapper {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: flex-end;
+    }
+}
+@media screen and (max-width: 775px) {
+    .main {
+        background-color: #161b21;
+    }
+    .coming h1 {
+        font-size: 48px;
+    }
+    .spinner {
+        height: 120px;
+        width: 120px;
+    }
+}
