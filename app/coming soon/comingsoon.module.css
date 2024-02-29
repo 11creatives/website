@@ -2,51 +2,63 @@
     display: flex;
     width: 100vw;
     height: 100vh;
-    background-image: url(../../public/asset/Lines.svg);
-    background-repeat: no-repeat;
-    padding: 2rem;
-    /* background-size: 110% 100%; */
-    background-position: left -10% top -30%;
-}
-.content {
-    background-image: url(../../public/asset/DotGrid.svg);
-    background-repeat: no-repeat;
-    height: 100vh;
-    flex: 1;
-    max-width: 1400px;
-    display: flex;
-}
-.coming h1 {
-    font-size: 50px;
-    font-weight: 700;
+    background-color: #161b21;
+    position: relative;
 }
 
-.coming {
+.wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.logoContainer {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.comingSoonContainer {
+    flex: 1;
     display: flex;
     align-items: center;
-    padding-bottom: 15rem;
+    justify-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    font-weight: 600;
 }
-.spinnerwrapper {
-    width: 100%;
+
+.comingSoon {
+    margin-top: 100px;
+    font-size: 3.5rem;
+}
+
+.spinnerContainer {
+    bottom: 10px;
+    right: 10px;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: flex-end;
-}
-.spinner {
-    width: 200px;
+    padding-right: 2rem;
     height: 200px;
-    position: relative;
 }
 
 .orbit {
     position: absolute;
-    height: 120px;
-    width: 120px;
+    height: 100px;
+    width: 100px;
     display: flex;
     border-radius: 100%;
     align-items: center;
     justify-content: center;
-    border: 2px solid #20272f;
+    border: 4px solid #20272f;
 }
 
 .centerdot {
@@ -64,40 +76,12 @@
     background-color: #e65709;
     animation: dot-rotation 7s linear infinite;
 }
+
 @keyframes dot-rotation {
     0% {
-        transform: rotate(0deg) translate(75px);
+        transform: rotate(0deg) translate(50px);
     }
     100% {
-        transform: rotate(360deg) translate(75px);
-    }
-}
-@media only screen and (min-width: 1448px) {
-    .main {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .coming {
-        padding-top: 100px;
-    }
-    .spinnerwrapper {
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-items: flex-end;
-    }
-}
-@media screen and (max-width: 775px) {
-    .main {
-        background-color: #161b21;
-    }
-    .coming h1 {
-        font-size: 48px;
-    }
-    .spinner {
-        height: 120px;
-        width: 120px;
+        transform: rotate(360deg) translate(50px);
     }
 }

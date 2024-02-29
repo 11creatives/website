@@ -9,11 +9,12 @@ export const metadata: Metadata = {
     description: 'A Youtube video editor company',
 }
 
-export default function RootLayout({
-    children,
-}: Readonly<{
+type TRootLayoutProps = {
     children: React.ReactNode
-}>) {
+}
+
+export default function RootLayout(props: TRootLayoutProps) {
+    const { children } = props
     return (
         <html lang="en">
             <body className={inter.className}>{children}</body>
