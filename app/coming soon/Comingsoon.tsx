@@ -2,7 +2,7 @@ import styles from './comingsoon.module.css'
 import Image from 'next/image'
 import companylogo from '../../public/asset/Logo.svg'
 
-export default function Comingsoon() {
+export default function ComingSoon() {
     return (
         <div className={styles.main}>
             <div className={styles.logoContainer}>
