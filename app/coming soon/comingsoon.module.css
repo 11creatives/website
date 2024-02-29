@@ -1,0 +1,87 @@
+.main {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: #161b21;
+    position: relative;
+}
+
+.wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.logoContainer {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.comingSoonContainer {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    font-weight: 600;
+}
+
+.comingSoon {
+    margin-top: 100px;
+    font-size: 3.5rem;
+}
+
+.spinnerContainer {
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 2rem;
+    height: 200px;
+}
+
+.orbit {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid #20272f;
+}
+
+.centerdot {
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    background-color: #20272f;
+}
+
+.reddot {
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    border-radius: 100%;
+    background-color: #e65709;
+    animation: dot-rotation 7s linear infinite;
+}
+
+@keyframes dot-rotation {
+    0% {
+        transform: rotate(0deg) translate(50px);
+    }
+    100% {
+        transform: rotate(360deg) translate(50px);
+    }
+}

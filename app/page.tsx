@@ -1,8 +1,11 @@
+import Image from 'next/image'
+import styles from './page.module.css'
+import ComingSoon from './coming soon/Comingsoon'
+
 export default function Home() {
     return (
-        <main>
-            <img src="/logo.jpg" alt="" />
-            <h1>We are currently working on our website.</h1>
+        <main className={styles.main}>
+            <ComingSoon />
         </main>
     )
 }
