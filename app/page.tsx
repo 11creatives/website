@@ -1,11 +1,10 @@
-import Image from 'next/image'
-import styles from './page.module.css'
-import ComingSoon from './coming soon/Comingsoon'
+import { Container } from '@/components/container'
+import { Typography } from '@/components/typography'
 
 export default function Home() {
     return (
-        <main className={styles.main}>
-            <ComingSoon />
-        </main>
+        <Container>
+            <Typography variant="heading1">Coming Soon</Typography>
+        </Container>
     )
 }
