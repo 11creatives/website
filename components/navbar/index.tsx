@@ -5,8 +5,8 @@ import { Container } from '../container'
 
 export function Navbar() {
     return (
-        <nav className={navbarStyle}>
-            <Container>
+        <nav>
+            <Container wrapperClassName={navbarStyle}>
                 <Image
                     src="/asset/logo.svg"
                     alt="11creatives logo"

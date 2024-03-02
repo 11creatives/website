@@ -11,8 +11,8 @@ type ContainerProps = {
 export function Container(props: ContainerProps) {
     const { children, sectionClassName, wrapperClassName } = props
     return (
-        <section className={clsx(sectionClassName, containerStyle)}>
-            <div className={clsx(wrapperClassName, wrapperStyle)}>
+        <section className={clsx(containerStyle, sectionClassName)}>
+            <div className={clsx(wrapperStyle, wrapperClassName)}>
                 {children}
             </div>
         </section>
